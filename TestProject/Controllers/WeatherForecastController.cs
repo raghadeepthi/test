@@ -31,7 +31,8 @@ namespace TestProject.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
+                Summary = Summaries[rng.Next(Summaries.Length)],
+                 Test = "hello world"
             })
             .ToArray();
         }
